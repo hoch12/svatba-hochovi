@@ -3,9 +3,8 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // TADY TO MUSÍ BÝT PŘESNĚ TAKTO (včetně lomítek):
+  // Přesný název tvého repozitáře mezi lomítky
   base: "/eli-ka-kry-tof-wedding/",
 
   server: {
