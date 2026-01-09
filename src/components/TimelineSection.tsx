@@ -5,43 +5,43 @@ const TimelineSection = () => {
     {
       time: "11:00 - 11:30",
       title: "Příjezd hostů",
-      description: "Uvítání a welcome drink",
+      description: "Welcome drink a drobné občerstvení",
       icon: Users
     },
     {
       time: "12:00 - 13:00",
       title: "Svatební obřad",
-      description: "Slavnostní slib lásky",
+      description: "",
       icon: Heart
     },
     {
       time: "13:00 - 14:00",
       title: "Focení",
-      description: "Společné fotografie",
+      description: "",
       icon: Camera
     },
     {
       time: "14:00 - 16:00",
       title: "Přípitek a hostina",
-      description: "Slavnostní oběd a gratulace",
+      description: "",
       icon: UtensilsCrossed
     },
     {
       time: "16:00",
       title: "Krájení dortu",
-      description: "Sladké překvapení",
+      description: "",
       icon: Cake
     },
     {
       time: "18:00 - 22:00",
       title: "První tanec",
-      description: "Romantický večer",
+      description: "",
       icon: Music
     },
     {
       time: "22:00",
-      title: "DJ & Párty",
-      description: "Tanec až do rána",
+      title: "DJ a party",
+      description: "",
       icon: PartyPopper
     }
   ];
@@ -54,7 +54,7 @@ const TimelineSection = () => {
             Harmonogram
           </p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-light text-foreground">
-            Program dne
+            Orientační program
           </h2>
           <div className="section-divider mt-8" />
         </div>
@@ -86,9 +86,11 @@ const TimelineSection = () => {
                     <h3 className="font-heading text-xl md:text-2xl text-foreground mb-1">
                       {event.title}
                     </h3>
-                    <p className="font-body text-sm text-muted-foreground">
-                      {event.description}
-                    </p>
+                    {event.description && (
+                      <p className="font-body text-sm text-muted-foreground">
+                        {event.description}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>

@@ -5,18 +5,18 @@ const FooterSection = () => {
   const witnesses = [
     {
       name: "Aneta Sauerová",
-      role: "Svědkyně nevěsty",
-      phone: "+420 777 123 456"
+      role: "Svědkyně",
+      phone: "722 043 979"
     },
     {
       name: "Dominik Hoch",
-      role: "Svědek ženicha",
-      phone: "+420 777 654 321"
+      role: "Svědek",
+      phone: "776 720 704"
     }
   ];
 
   return (
-    <footer className="py-20 md:py-32 bg-gradient-section">
+    <footer id="rsvp" className="py-20 md:py-32 bg-gradient-section">
       <div className="container max-w-4xl mx-auto px-6">
         {/* RSVP Section */}
         <div className="text-center mb-20">
@@ -24,10 +24,10 @@ const FooterSection = () => {
             Potvrďte účast
           </p>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-6">
-            Těšíme se na vás
+            Potvrďte nám prosím svou účast
           </h2>
           <p className="font-body text-muted-foreground mb-10 max-w-xl mx-auto">
-            Prosíme o potvrzení vaší účasti do 1. května 2026 vyplněním krátkého dotazníku.
+            Prosíme o vyplnění dotazníku do 15. března 2026.
           </p>
           
           <Button
@@ -45,7 +45,7 @@ const FooterSection = () => {
         {/* Contacts */}
         <div className="text-center mb-16">
           <h3 className="font-heading text-2xl md:text-3xl text-foreground mb-8">
-            Kontakty na svědky
+            Kontaktní osoby v den svatby
           </h3>
           
           <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
@@ -58,7 +58,7 @@ const FooterSection = () => {
                   {witness.role}
                 </p>
                 <a
-                  href={`tel:${witness.phone.replace(/\s/g, "")}`}
+                  href={`tel:+420${witness.phone.replace(/\s/g, "")}`}
                   className="inline-flex items-center gap-2 font-body text-gold hover:text-gold-light transition-colors duration-300"
                 >
                   <Phone className="w-4 h-4" />
