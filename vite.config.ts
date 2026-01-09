@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // DŮLEŽITÉ: Tady přidáváme cestu pro GitHub Pages podle názvu tvého repozitáře
+  // TADY TO MUSÍ BÝT PŘESNĚ TAKTO (včetně lomítek):
   base: "/eli-ka-kry-tof-wedding/",
 
   server: {
