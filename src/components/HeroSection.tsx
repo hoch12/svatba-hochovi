@@ -2,55 +2,57 @@ import heroImage from "@/assets/hero-couple.jpg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex flex-col bg-warm-white">
-      {/* Header text */}
-      <div className="text-center pt-16 pb-8 px-6">
-        <p 
-          className="font-heading text-2xl md:text-3xl font-light text-foreground/70 animate-fade-in"
-          style={{ animationDelay: "0.2s", opacity: 0 }}
-        >
-          Budeme svoji
-        </p>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={heroImage}
+          alt="Eliška a Kryštof"
+          className="w-full h-full object-cover object-center md:object-[center_30%]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-warm-white/60 via-warm-white/20 to-cream/80" />
       </div>
 
-      {/* Main Image */}
-      <div className="relative w-full max-w-5xl mx-auto px-4 md:px-8 animate-fade-in" style={{ animationDelay: "0.4s", opacity: 0 }}>
-        <div className="relative overflow-hidden rounded-sm shadow-2xl">
-          <img
-            src={heroImage}
-            alt="Eliška a Kryštof"
-            className="w-full h-auto object-cover"
-          />
+      {/* Content */}
+      <div className="relative z-10 text-center px-6 py-20">
+        <div className="animate-fade-in" style={{ animationDelay: "0.2s", opacity: 0 }}>
+          <p className="font-heading text-xl md:text-2xl tracking-[0.2em] text-foreground/80 mb-6">
+            Budeme svoji
+          </p>
         </div>
-      </div>
-
-      {/* Content below image */}
-      <div className="text-center px-6 py-12 md:py-16 flex-1 flex flex-col justify-center">
+        
         <h1 
-          className="font-heading text-4xl md:text-5xl lg:text-6xl font-light tracking-wide text-foreground mb-4 animate-fade-in"
-          style={{ animationDelay: "0.6s", opacity: 0 }}
+          className="font-heading text-5xl md:text-7xl lg:text-8xl font-light tracking-wide text-foreground mb-6 animate-fade-in"
+          style={{ animationDelay: "0.4s", opacity: 0 }}
         >
-          Eliška a Kryštof
+          Eliška <span className="text-gold italic">&</span> Kryštof
         </h1>
 
+        <div 
+          className="animate-fade-in"
+          style={{ animationDelay: "0.6s", opacity: 0 }}
+        >
+          <div className="section-divider my-8" />
+        </div>
+
         <p 
-          className="font-body text-lg md:text-xl text-foreground/70 mb-8 animate-fade-in"
+          className="font-heading text-xl md:text-2xl lg:text-3xl font-light text-foreground/80 tracking-wider mb-6 animate-fade-in"
           style={{ animationDelay: "0.8s", opacity: 0 }}
         >
           1. července 2026, Zámeček Ostrov u Zbraslavic
         </p>
 
         <div 
-          className="max-w-2xl mx-auto space-y-6 animate-fade-in"
+          className="max-w-2xl mx-auto space-y-4 animate-fade-in"
           style={{ animationDelay: "1s", opacity: 0 }}
         >
-          <p className="font-body text-base md:text-lg text-muted-foreground leading-relaxed">
+          <p className="font-body text-base md:text-lg text-foreground/70 leading-relaxed">
             Srdečně vás zveme na naši svatbu, která se bude konat 1. července 2026 na Zámečku Ostrov u Zbraslavic.
           </p>
-          <p className="font-body text-base md:text-lg text-muted-foreground leading-relaxed">
+          <p className="font-body text-base md:text-lg text-foreground/70 leading-relaxed">
             Budeme moc rádi, když u toho budete s námi.
           </p>
-          <p className="font-body text-base md:text-lg text-foreground/80 font-medium">
+          <p className="font-body text-base md:text-lg text-foreground/90 font-medium">
             Prosíme o vyplnění dotazníku do 15. března 2026.
           </p>
         </div>
