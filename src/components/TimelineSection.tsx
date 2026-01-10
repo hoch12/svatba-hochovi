@@ -39,7 +39,7 @@ const TimelineSection = () => {
       icon: Music
     },
     {
-      time: "22:00-??-??",
+      time: "22:00 - ??:??",
       title: "DJ a party",
       description: "",
       icon: PartyPopper

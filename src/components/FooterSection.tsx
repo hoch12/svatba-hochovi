@@ -16,7 +16,8 @@ const FooterSection = () => {
   ];
 
   return (
-      <footer id="rsvp" className="py-20 md:py-32 bg-gradient-section">
+      // Zůstává zmenšené spodní odsazení (pb-8), aby pod autorem nebylo moc místa
+      <footer id="rsvp" className="pt-20 md:pt-32 pb-8 bg-gradient-section">
         <div className="container max-w-4xl mx-auto px-6">
           {/* RSVP Section */}
           <div className="text-center mb-20">
@@ -34,7 +35,6 @@ const FooterSection = () => {
                 asChild
                 className="bg-gold hover:bg-gold-light text-foreground font-body text-sm tracking-widest uppercase px-10 py-6 rounded-md transition-all duration-300 hover:shadow-lg"
             >
-              {/* ZDE JSEM VLOŽIL TEN ODKAZ NA GOOGLE FORM */}
               <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLScqAtg5FundNvTr7LJ5qTfzwVgMFge3DRdsbSIpdcmw0BQCyw/viewform?usp=header"
                   target="_blank"
@@ -86,6 +86,14 @@ const FooterSection = () => {
             </div>
             <p className="font-body text-sm text-muted-foreground/60 mt-4">
               1. července 2026
+            </p>
+
+            {/* ZMĚNA: Vrátil jsem oddělovač, ale dal jsem mu malé okraje (my-6) */}
+            {/* Předtím tam bylo mb-16, což dělalo tu obří díru */}
+            <div className="section-divider my-6 opacity-60" />
+
+            <p className="font-body text-xs text-muted-foreground/60">
+              Autor: Dominik Hoch
             </p>
           </div>
         </div>
