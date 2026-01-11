@@ -38,7 +38,7 @@ const HeroSection = () => {
                 style={{ animationDelay: "0.8s", opacity: 0 }}
             >
                 <p className="font-heading text-xl md:text-2xl text-foreground mb-8 tracking-wide font-bold">
-                    1. července 2026, Zámeček Ostrov u Zbraslavic
+                    1. července 2026, Zámeček Ostrov u&nbsp;Zbraslavic
                 </p>
             </div>
 
@@ -49,12 +49,12 @@ const HeroSection = () => {
             >
                 <a
                     href="#rsvp"
-                    // DŮLEŽITÁ OPRAVA: Toto zabrání 404 chybě a plynule sjede dolů
                     onClick={(e) => {
                         e.preventDefault();
                         document.getElementById("rsvp")?.scrollIntoView({ behavior: "smooth" });
                     }}
-                    className="inline-flex flex-col items-center gap-2 font-body text-sm tracking-widest uppercase text-foreground/60 hover:text-gold transition-colors duration-300 cursor-pointer font-bold"
+                    // ZMĚNA ZDE: 'text-foreground/60' změněno na 'text-foreground' (bez průhlednosti)
+                    className="inline-flex flex-col items-center gap-2 font-body text-sm tracking-widest uppercase text-foreground hover:text-gold transition-colors duration-300 cursor-pointer font-bold"
                 >
                     <span>Potvrďte nám prosím svou účast</span>
                     <svg

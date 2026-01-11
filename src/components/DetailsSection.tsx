@@ -28,7 +28,7 @@ const DetailsSection = () => {
             </h3>
             
             <p className="font-body text-muted-foreground leading-relaxed">
-              Svatbu nebudeme ladit do konkrétní barvy, proto budeme rádi, když zvolíte oblečení, ve kterém se budete cítit příjemně a elegantně.
+              Svatbu nebudeme ladit do konkrétní barvy, proto budeme rádi, když zvolíte oblečení, ve kterém se budete cítit příjemně a&nbsp;elegantně.
             </p>
           </div>
 

@@ -28,7 +28,7 @@ const FooterSection = () => {
               Potvrďte nám prosím svou účast
             </h2>
             <p className="font-body text-muted-foreground mb-10 max-w-xl mx-auto">
-              Prosíme o vyplnění dotazníku do 15. března 2026.
+              Prosíme o vyplnění dotazníku do 15.&nbsp;března&nbsp;2026.
             </p>
 
             <Button
@@ -76,7 +76,7 @@ const FooterSection = () => {
 
           {/* Footer bottom */}
           <div className="text-center pt-10 border-t border-border/30">
-            <p className="font-body text-sm text-muted-foreground/60 mt-4">
+            <p className="font-body text-ms text-muted-foreground/60 mt-4">
               Budeme se těšit
             </p>
             <div className="flex items-center justify-center gap-2 text-muted-foreground">

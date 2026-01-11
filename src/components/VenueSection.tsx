@@ -54,7 +54,7 @@ const VenueSection = () => {
             </h3>
 
             <p className="font-body text-muted-foreground mb-6">
-              Ostrov 1, 285 22 Zbraslavice-Zruč nad Sázavou 1
+              Ostrov 1, 285 22 Zbraslavice - Zruč&nbsp;nad&nbsp;Sázavou&nbsp;1
             </p>
 
             <a
@@ -106,7 +106,7 @@ const VenueSection = () => {
               </h3>
 
               <p className="font-body text-muted-foreground leading-relaxed mb-4">
-                Část svatebčanů bude ubytována na Zámečku. Jelikož jsou však ubytovací kapacity zámečku omezené, bude zbytek svatebčanů ubytován v Hotelu Agnes vzdáleném zhruba 4 km od areálu Zámečku.
+                Část svatebčanů bude ubytována na Zámečku. Jelikož jsou však ubytovací kapacity Zámečku omezené, bude zbytek svatebčanů ubytován v Hotelu Agnes vzdáleném zhruba 4&nbsp;km od areálu Zámečku.
               </p>
 
               <a
