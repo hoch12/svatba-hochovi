@@ -81,7 +81,7 @@ const VenueSection = () => {
               </h3>
 
               <p className="font-body text-muted-foreground leading-relaxed mb-6">
-                Při příjezdu zaparkujte auto prosím na parkovišti, které se nachází před budovou Muzea Ostrov lidových krojů mimo areál zámečku. Přesnou lokalitu naleznete v přiložené mapě.
+                Při příjezdu zaparkujte auto prosím na parkovišti, které se nachází před budovou Muzea Ostrov lidových krojů mimo areál Zámečku. Přesnou lokalitu naleznete v přiložené mapě.
               </p>
 
               <a
