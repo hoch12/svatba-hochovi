@@ -43,7 +43,7 @@ const DetailsSection = () => {
             </h3>
 
             <p className="font-body text-muted-foreground leading-relaxed">
-              Domácnost máme již plně vybavenou, budeme ale rádi, když nám finančně přispějete třeba na svatební cestu.
+              Pokud byste nás chtěli poctít svatebním darem, můžete nás obdarovat finančním příspěvkem. Největší radost nám však udělá, když tento den strávíte s námi.
             </p>
           </div>
         </div>
