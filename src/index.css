@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 43 33% 96%;
+    --foreground: 35 25% 25%;
+
+    --card: 45 40% 97%;
+    --card-foreground: 35 25% 25%;
+
+    --popover: 45 40% 97%;
+    --popover-foreground: 35 25% 25%;
+
+    --primary: 43 50% 88%;
+    --primary-foreground: 35 35% 20%;
+
+    --secondary: 48 60% 95%;
+    --secondary-foreground: 35 25% 25%;
+
+    --muted: 40 30% 92%;
+    --muted-foreground: 35 15% 45%;
+
+    --accent: 38 45% 75%;
+    --accent-foreground: 35 35% 20%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 38 30% 85%;
+    --input: 38 30% 85%;
+    --ring: 38 45% 65%;
+
+    --radius: 0.5rem;
+
+    /* Wedding specific tokens */
+    --cream: 60 56% 91%;
+    --vanilla: 54 100% 91%;
+    --gold: 38 60% 55%;
+    --gold-light: 38 50% 75%;
+    --warm-white: 45 50% 98%;
+    --beige: 35 25% 70%;
+    --text-dark: 35 30% 22%;
+    --text-light: 35 20% 40%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(180deg, hsl(var(--warm-white)) 0%, hsl(var(--cream)) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(var(--vanilla) / 0.5) 0%, hsl(var(--cream) / 0.8) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(var(--gold-light)) 0%, hsl(var(--gold)) 100%);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 35 20% 12%;
+    --foreground: 43 33% 96%;
+
+    --card: 35 20% 15%;
+    --card-foreground: 43 33% 96%;
+
+    --popover: 35 20% 15%;
+    --popover-foreground: 43 33% 96%;
+
+    --primary: 38 45% 75%;
+    --primary-foreground: 35 35% 15%;
+
+    --secondary: 35 20% 20%;
+    --secondary-foreground: 43 33% 96%;
+
+    --muted: 35 15% 25%;
+    --muted-foreground: 35 20% 65%;
+
+    --accent: 38 45% 55%;
+    --accent-foreground: 43 33% 96%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 15% 25%;
+    --input: 35 15% 25%;
+    --ring: 38 45% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(var(--gold-light)) 0%, hsl(var(--gold)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-section {
+    background: var(--gradient-section);
+  }
+
+  .section-divider {
+    @apply w-24 h-px mx-auto;
+    background: linear-gradient(90deg, transparent 0%, hsl(var(--gold)) 50%, transparent 100%);
+  }
+
+  .ornament {
+    @apply text-2xl;
+    color: hsl(var(--gold));
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
