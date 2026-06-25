@@ -74,6 +74,28 @@ const FooterSection = () => {
           </div>
         </div>
 
+        {/* Taxi Contacts */}
+        <div className="text-center mb-16">
+          <h3 className="font-heading text-2xl md:text-3xl text-foreground mb-8">
+            Kontakt na taxislužby
+          </h3>
+
+          <div className="max-w-sm mx-auto">
+            <div className="bg-card p-6 rounded-lg border border-border/50">
+              <p className="font-heading text-xl text-foreground mb-4">
+                Taxi Zruč nad Sázavou
+              </p>
+              <a
+                href="tel:+420604687220"
+                className="inline-flex items-center gap-2 font-body text-gold hover:text-gold-light transition-colors duration-300"
+              >
+                <Phone className="w-4 h-4" />
+                <span>604 687 220</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
         {/* Footer bottom */}
         <div className="text-center pt-10 border-t border-border/30">
           <p className="font-body text-ms text-muted-foreground/60 mt-4">
