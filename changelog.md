@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2026-07-05
+
+### Added
+- Added a new section for Vows and Sermon ("Sliby a kázání") before the RSVP footer.
+- Implemented smooth navigation links from the sermon to Kryštof's and Eliška's respective vow cards.
+- Integrated fully formatted Czech text of the sermon, vows, prayer, and blessing.
+
 ## [1.1.0] - 2026-06-25
 
 ### Added
